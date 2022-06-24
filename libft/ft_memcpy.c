@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: omer <omer@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/23 20:20:35 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/24 23:55:05 by omer             ###   ########.fr       */
+/*   Created: 2022/06/25 00:10:45 by omer              #+#    #+#             */
+/*   Updated: 2022/06/25 00:29:57 by omer             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
 #include <stdio.h>
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
-{
-	int	index;
+// void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+// {
 
-	index = 0;
-	while ((s1[index] || s2 [index]) && index <= n)
-	{
-		printf("%c , %c\n", s1[index], s2[index]);
-		if (s1[index] < s2[index])
-			return (-1);
-		if (s1[index] > s2[index])
-			return (1);
-		index++;
-	}
-	return (0);
+// }
+int main () {
+   const char src[50] = "omer";
+   char dest[50];
+   strcpy(dest,"remofaruk");
+   printf("Before memcpy dest = %s\n", dest);
+   memcpy(dest, src, 2);
+   printf("After memcpy dest = %s\n", dest);
+   printf("After memcpy source = %s\n", src);
+   
+   return(0);
 }
