@@ -1,19 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/25 00:10:45 by omer              #+#    #+#             */
-/*   Updated: 2022/06/25 18:04:05 by obalaban         ###   ########.fr       */
+/*   Created: 2022/06/25 17:59:55 by obalaban          #+#    #+#             */
+/*   Updated: 2022/06/25 19:01:36 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-void	*ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char		*d;
 	const unsigned char	*s;
@@ -24,11 +24,11 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	index = 0;
 	if (dst == NULL && src == NULL)
 		return (dst);
-	while (n > 0)
+	while (len > 0)
 	{
 		d[index] = s[index];
 		index++;
-		n--;
+		len--;
 	}
 	return (dst);
 }
@@ -42,10 +42,10 @@ int main (void)
     fourth = string1;
 
     puts(string);
-    memcpy(third+5, third, 9);
-    puts(third);
     memmove(fourth+5, fourth, 11);
     puts(fourth);
+    memcpy(third+5, third, 11);
+    puts(third);
     return 0;
 
 }

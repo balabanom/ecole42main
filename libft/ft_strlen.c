@@ -6,13 +6,14 @@
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 19:32:26 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/23 16:19:20 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/06/25 14:35:26 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <string.h>
+#include <stdio.h>
 
-size_t	strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	int	index;
 
