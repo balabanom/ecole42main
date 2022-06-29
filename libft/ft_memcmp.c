@@ -1,27 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/23 18:41:43 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/29 18:47:18 by obalaban         ###   ########.fr       */
+/*   Created: 2022/06/29 19:07:58 by obalaban          #+#    #+#             */
+/*   Updated: 2022/06/29 19:24:21 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *s, int c)
+#include <string.h>
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int	index;
+	size_t				index;
+	unsigned char		*ps1;
+	unsigned char		*ps2;
 
 	index = 0;
-	while (s[index])
+	ps1 = (unsigned char *)(s1);
+	ps2 = (unsigned char *)(s2);
+	while (index < n)
 	{
-		if ((unsigned char)s[index] == (unsigned char)c)
-			return ((char *)(s + index));
+		if (ps1[index] != ps2[index])
+			return (ps1[index] - ps2[index]);
 		index++;
 	}
-	if (c == '\0')
-		return ((char *)(s + index));
 	return (0);
 }

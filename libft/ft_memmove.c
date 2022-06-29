@@ -6,7 +6,7 @@
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 17:59:55 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/29 14:32:47 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/06/29 17:22:35 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	int					index;
+	int	index;
 
 	index = 0;
 	if (dst == NULL && src == NULL)

@@ -1,27 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/23 18:41:43 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/29 18:47:18 by obalaban         ###   ########.fr       */
+/*   Created: 2022/06/29 19:31:55 by obalaban          #+#    #+#             */
+/*   Updated: 2022/06/29 19:33:57 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
-	int	index;
-
-	index = 0;
-	while (s[index])
-	{
-		if ((unsigned char)s[index] == (unsigned char)c)
-			return ((char *)(s + index));
-		index++;
-	}
-	if (c == '\0')
-		return ((char *)(s + index));
-	return (0);
+	
 }

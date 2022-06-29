@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/23 18:41:43 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/29 18:47:18 by obalaban         ###   ########.fr       */
+/*   Created: 2022/06/29 16:56:50 by obalaban          #+#    #+#             */
+/*   Updated: 2022/06/29 17:13:37 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strchr(const char *s, int c)
+#include <string.h>
+
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	int	index;
+	size_t	index;
+	size_t	len;
 
 	index = 0;
-	while (s[index])
+	len = 0;
+	while (src[len])
 	{
-		if ((unsigned char)s[index] == (unsigned char)c)
-			return ((char *)(s + index));
+		len++;
+	}
+	if (dstsize == 0)
+		return (len);
+	while (index < dstsize - 1 && src[index])
+	{
+		dst[index] = src[index];
 		index++;
 	}
-	if (c == '\0')
-		return ((char *)(s + index));
-	return (0);
+	dst[index] = '\0';
+	return (len);
 }
