@@ -6,11 +6,11 @@
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 19:26:52 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/23 15:59:29 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/06/29 14:40:24 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isprint(int c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);

@@ -6,13 +6,13 @@
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 17:16:38 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/23 15:59:25 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/06/29 15:36:54 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isdigit(int c)
+int	ft_isdigit(int c)
 {
-	if (c >= 0 && c <= 9)
+	if (c >= '0' && c <= '9')
 	{
 		return (1);
 	}

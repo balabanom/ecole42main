@@ -6,11 +6,11 @@
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 19:15:22 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/23 15:58:57 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/06/29 14:40:09 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isalnum(int c)
+int	ft_isalnum(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

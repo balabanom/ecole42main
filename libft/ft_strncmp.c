@@ -6,7 +6,7 @@
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 20:20:35 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/25 11:53:26 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/06/29 15:30:36 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,16 @@
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	int	index;
+	size_t	index;
 
 	index = 0;
-	while ((s1[index] || s2 [index]) && index <= n)
+	if (n == 0)
+		return (0);
+	while ((s1[index] || s2 [index]) && index < n)
 	{
-		printf("%c , %c\n", s1[index], s2[index]);
-		if (s1[index] < s2[index])
+		if ((unsigned char)s1[index] < (unsigned char)s2[index])
 			return (-1);
-		if (s1[index] > s2[index])
+		if ((unsigned char)s1[index] > (unsigned char)s2[index])
 			return (1);
 		index++;
 	}

@@ -6,11 +6,11 @@
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 19:36:13 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/23 15:59:04 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/06/29 14:40:14 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{

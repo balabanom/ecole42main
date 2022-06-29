@@ -6,7 +6,7 @@
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 00:10:45 by omer              #+#    #+#             */
-/*   Updated: 2022/06/25 18:04:05 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/06/29 14:10:07 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,19 +33,13 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	return (dst);
 }
 
-int main (void)
-{
-	char string [] = "stackoverflow";
-	char string1 [] = "stackoverflow";
-    char *third, *fourth;
-    third = string;
-    fourth = string1;
+// int main (void)
+// {
+// 	char	c [] = "1234567890asdfgh";
+// 	char	c1 [] = "1234567890asdfgh";
+// 	memcpy(c + 5, c, 9);
+// 	memmove(c1 + 5, c1, 9);
+// 	printf("memcpy = %s\n", c);
+// 	printf("memmove = %s\n", c1);
 
-    puts(string);
-    memcpy(third+5, third, 9);
-    puts(third);
-    memmove(fourth+5, fourth, 11);
-    puts(fourth);
-    return 0;
-
-}
+// }

@@ -6,11 +6,11 @@
 /*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 15:57:30 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/23 16:09:49 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/06/29 14:40:36 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
