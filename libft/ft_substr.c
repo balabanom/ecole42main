@@ -1,30 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/20 19:36:13 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/02 14:14:06 by obalaban         ###   ########.fr       */
+/*   Created: 2022/06/30 19:30:25 by obalaban          #+#    #+#             */
+/*   Updated: 2022/07/02 15:57:36 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha(int c)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	if (c >= 'a' && c <= 'z')
+	char	*d;
+	size_t	i;
+
+	if (!s)
+		return (NULL);
+	d = (char *)malloc(len + 1);
+	if (!d)
+		return (NULL);
+	if (start >= ft_strlen(s))
 	{
-		return (1);
+		d[0] = '\0';
+		return (d);
 	}
-	else if (c >= 'A' && c <= 'Z')
+	i = 0;
+	while (s[start] && i < len)
 	{
-		return (1);
+		d[i] = s[start];
+		i++;
+		start++;
 	}
-	else
-	{
-		return (0);
-	}
-	return (2);
+	d[i] = '\0';
+	return (d);
 }
+
+/* int main(){
+	printf("%s", ft_substr("tripouisdfdsflle", 0, 13));
+} */

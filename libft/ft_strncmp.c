@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
+/*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 20:20:35 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/29 15:30:36 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/02 14:15:14 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
+#include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

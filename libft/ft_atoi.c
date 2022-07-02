@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
+/*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 13:43:44 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/30 16:35:31 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/02 14:13:50 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+#include "libft.h"
 
-int	check_space(char c)
+static int	check_space(char c)
 {
 	if (c == ' ' || c == '\t' || c == '\n')
 		return (1);
@@ -23,7 +21,7 @@ int	check_space(char c)
 	return (0);
 }
 
-int	jump_space(char *str)
+static int	jump_space(char *str)
 {
 	int	index;
 
@@ -59,12 +57,4 @@ int	ft_atoi(const char *str)
 	else if (number > 9223372036854775807 && k == -1)
 		return (0);
 	return (number * k);
-}
-
-int	main(void)
-{
-	char	*c = "    -9223372036854775808";
-
-	printf("%i\n", ft_atoi(c));
-	printf("%i\n", atoi(c));
 }

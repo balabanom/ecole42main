@@ -3,14 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: obalaban <obalaban@student.42.fr>          +#+  +:+       +#+        */
+/*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 18:39:04 by obalaban          #+#    #+#             */
-/*   Updated: 2022/06/29 19:04:21 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/02 18:25:45 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <string.h>
+#include <stdio.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -19,14 +21,16 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	index = 0;
 	ps = (unsigned char *)s;
-	while (ps[index] && n > 0)
-	{
-		if (ps[index] == (unsigned char)c)
-			return ((void *)(s + index));
+	while (ps[index] != (unsigned char)c && index < n)
 		index++;
-		n--;
-	}
-	if (c == '\0')
+	if (index < n)
 		return ((void *)(s + index));
 	return (0);
 }
+
+// int	main(void)
+// {
+// 	char c[] = {0, 1, 2, 3, 4, 5};
+// 	printf("%s\n", ft_memchr(c, 2, 3));
+// 	printf("a:%s\n", memchr(c, 2, 5));
+// }
