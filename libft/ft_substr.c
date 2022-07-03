@@ -6,7 +6,7 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 19:30:25 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/02 15:57:36 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/03 15:17:16 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,12 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (NULL);
+	if (len > ft_strlen(s) - start)
+		len = ft_strlen(s) - start;
 	d = (char *)malloc(len + 1);
 	if (!d)
 		return (NULL);
-	if (start >= ft_strlen(s))
+	if (start > ft_strlen(s))
 	{
 		d[0] = '\0';
 		return (d);

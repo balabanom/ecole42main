@@ -6,23 +6,43 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 19:45:58 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/02 20:44:37 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/03 15:12:03 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+
+static int	is_in_set(char ch, char const *set)
+{
+	int	index;
+
+	index = 0;
+	while (set[index])
+	{
+		if (set[index] == ch)
+			return (1);
+		index++;
+	}
+	return (0);
+}
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*d;
-	int		i;
+	int		start;
+	int		end;
 
-	d = (char *)
+	if (!s1 || !set)
+		return (0);
+	start = 0;
+	end = ft_strlen(s1) - 1;
+	while (is_in_set(s1[start], set))
+		start++;
+	while (is_in_set(s1[end], set))
+		end--;
+	return (ft_substr(s1, start, end - start + 1));
 }
 
-int	main(void)
-{
-	char	*c = "celalcel";
-	printf("%s\n", ft_strtrim(c, "aks"));
-}
+// int	main(void)
+// {
+// 	printf("%s\n", ft_strtrim("cesscelsscels", " ceal"));
+// }
