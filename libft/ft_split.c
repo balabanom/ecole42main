@@ -6,67 +6,67 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 15:24:32 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/03 17:53:25 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/05 19:33:14 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-static void	ft_allocate(char **tab, char const *s, char sep)
+static void	create(char **tab, char const *s, char c)
 {
-	char		**tab_p;
-	char const	*tmp;
+	char		**d;
+	char const	*cursor;
 
-	tmp = s;
-	tab_p = tab;
-	while (*tmp)
+	cursor = s;
+	d = tab;
+	while (*cursor)
 	{
-		while (*s == sep)
+		while (*s == c)
 			s++;
-		tmp = s;
-		while (*tmp && *tmp != sep)
-			tmp++;
-		if (*tmp == sep || tmp > s)
+		cursor = s;
+		while (*cursor && *cursor != c)
+			cursor++;
+		if (*cursor == c || cursor > s)
 		{
-			*tab_p = ft_substr(s, 0, tmp - s);
-			s = tmp;
-			tab_p++;
+			*d = ft_substr(s, 0, cursor - s);
+			s = cursor;
+			d++;
 		}
 	}
-	*tab_p = NULL;
+	*d = NULL;
 }
 
-static int	ft_count_words(char const *s, char sep)
+static int	cwords(char const *s, char c)
 {
-	int	word_count;
+	int	counter;
 
-	word_count = 0;
+	counter = 0;
 	while (*s)
 	{
-		while (*s == sep)
+		while (*s == c)
 			s++;
 		if (*s)
-			word_count++;
-		while (*s && *s != sep)
+			counter++;
+		while (*s && *s != c)
 			s++;
 	}
-	return (word_count);
+	return (counter);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	char	**new;
+	char	**d;
 	int		size;
 
 	if (!s)
 		return (NULL);
-	size = ft_count_words(s, c);
-	new = (char **)malloc(sizeof(char *) * (size + 1));
-	if (!new)
+	size = cwords(s, c);
+	d = (char **)malloc(sizeof(char *) * (size + 1));
+	if (!d)
 		return (NULL);
-	ft_allocate(new, s, c);
-	return (new);
+	create(d, s, c);
+	return (d);
 }
 
 
