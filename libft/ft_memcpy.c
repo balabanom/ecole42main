@@ -6,7 +6,7 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 00:10:45 by omer              #+#    #+#             */
-/*   Updated: 2022/07/02 14:14:37 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/07 17:39:18 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,9 +36,9 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 // {
 // 	char	c [] = "1234567890asdfgh";
 // 	char	c1 [] = "1234567890asdfgh";
-// 	memcpy(c + 5, c, 9);
-// 	memmove(c1 + 5, c1, 9);
+// 	ft_memcpy(c + 5, c, 9);
+// 	//memmove(c1 + 5, c1, 9);
 // 	printf("memcpy = %s\n", c);
-// 	printf("memmove = %s\n", c1);
+// 	//printf("memmove = %s\n", c1);
 
 // }

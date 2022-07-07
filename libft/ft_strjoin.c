@@ -6,7 +6,7 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/02 19:15:27 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/02 19:42:57 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/07 19:47:18 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	return (d);
 }
 
-// int main(void)
-// {
-// 	char	*c = "";
-// 	char	*c1 = "42";
-// 	printf("%s\n", ft_strjoin(c, c1));
-// 	printf("%d\n", !(strcmp(ft_strjoin(c, c1), "42")));
-// }
+int main(void)
+{
+	char	*c = "";
+	char	*c1 = "42";
+	printf("%s\n", ft_strjoin(c, c1));
+	printf("%d\n", !(strcmp(ft_strjoin(c, c1), "42")));
+}

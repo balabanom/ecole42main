@@ -6,7 +6,7 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/30 13:43:44 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/02 14:13:50 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/07 19:47:59 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,3 +58,9 @@ int	ft_atoi(const char *str)
 		return (0);
 	return (number * k);
 }
+
+// int	main(void)
+// {
+// 	char	*c = "omer--12392";
+// 	printf("%i\n", ft_atoi(c));
+// }
