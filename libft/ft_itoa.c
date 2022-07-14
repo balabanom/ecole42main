@@ -6,12 +6,10 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 19:33:27 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/06 19:33:28 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/08 16:13:52 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdlib.h>
 #include "libft.h"
 
 static int	ft_size(long n)

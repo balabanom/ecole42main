@@ -6,13 +6,11 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/23 19:54:38 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/02 18:39:23 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/08 17:16:42 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strrchr(const char *s, int c)
 {

@@ -6,7 +6,7 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 19:36:13 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/02 14:14:06 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/08 16:10:53 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,5 @@ int	ft_isalpha(int c)
 	{
 		return (1);
 	}
-	else
-	{
-		return (0);
-	}
-	return (2);
+	return (0);
 }

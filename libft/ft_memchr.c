@@ -6,13 +6,11 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/29 18:39:04 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/02 18:25:45 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/08 16:14:10 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

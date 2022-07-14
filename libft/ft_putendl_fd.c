@@ -6,12 +6,11 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 18:54:09 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/06 19:02:00 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/08 16:44:44 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <fcntl.h>
 
 void	ft_putendl_fd(char *s, int fd)
 {

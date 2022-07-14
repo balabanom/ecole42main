@@ -6,12 +6,11 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/03 15:24:32 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/05 19:33:14 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/08 17:27:44 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static void	create(char **tab, char const *s, char c)
 {
@@ -69,17 +68,15 @@ char	**ft_split(char const *s, char c)
 	return (d);
 }
 
-
-
 /* int main()
 {
 	char **output;
 	output = (char **)malloc(1024*16);
-	output = ft_split("yasin||  ||this|for|me|||||!|", '|');
+	output = ft_split("omer||  ||this|for|me|||||!|", '|');
 	int index = 0;
 	while (index < 5)
 	{
-		printf("\n%s",output[index]);
+		printf("%s\n",output[index]);
 		index++;
 	}
 } */

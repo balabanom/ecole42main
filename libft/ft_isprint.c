@@ -6,7 +6,7 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/22 19:26:52 by obalaban          #+#    #+#             */
-/*   Updated: 2022/07/02 14:14:20 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/07/08 16:11:10 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,5 @@ int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
 		return (1);
-	else
-		return (0);
-	return (2);
+	return (0);
 }
