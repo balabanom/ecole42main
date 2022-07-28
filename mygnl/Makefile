@@ -1,6 +1,6 @@
-.PHONY: all clean fclean re collect
+.PHONY: all clean fclean re rem collect
 CC := gcc
-FLAG = -Wall -Wextra -Werror -D BUFFER_SIZE=100
+FLAG = -Wall -Wextra -Werror -D BUFFER_SIZE=42
 SRCS = ./get_next_line.c ./get_next_line_utils.c ./main.c
 HEADER = ./
 NAME = get_next_line.a
