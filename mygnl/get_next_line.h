@@ -15,7 +15,6 @@
 
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
 
 char	*get_next_line(int fd);
 size_t	ft_strlen(const char *s);
