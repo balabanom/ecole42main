@@ -1,8 +1,0 @@
-{
-	"files.associations": {
-		"unistd.h": "c",
-		"chrono": "c",
-		"variant": "c",
-		"algorithm": "c"
-	}
-}
