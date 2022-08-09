@@ -27,7 +27,7 @@ int	letters(va_list *a, const char *s)
 	else if (*s == 'p')
 	{
 		ft_putstr("0x");
-		return (2 + ft_putnbr_base(va_arg(*a, unsigned long int), BASE16L, 0));
+		return (2 + ft_putnbr_base(va_arg(*a, unsigned long), BASE16L, 0));
 	}
 	else if (*s == 'x')
 		return (ft_putnbr_base(va_arg(*a, unsigned int), BASE16L, 0));
