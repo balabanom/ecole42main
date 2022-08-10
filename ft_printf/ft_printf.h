@@ -6,7 +6,7 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 11:26:35 by obalaban          #+#    #+#             */
-/*   Updated: 2022/08/03 11:51:12 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/08/10 13:38:16 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int		letters(va_list *a, const char *s);
 int		ft_putchar(char c);
 size_t	ft_strlen(const char *s);
 int		ft_putstr(char *c);
-int		ft_putnbr_base(size_t nbr, char *base, int basamak1);
+int		ft_putnbr_base(size_t nbr, char *base, int digit1);
 int		ft_putnbr(int nb);
 
 #endif

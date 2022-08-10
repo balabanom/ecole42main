@@ -6,7 +6,7 @@
 /*   By: obalaban <obalaban@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/03 11:26:32 by obalaban          #+#    #+#             */
-/*   Updated: 2022/08/03 11:47:27 by obalaban         ###   ########.fr       */
+/*   Updated: 2022/08/10 13:38:05 by obalaban         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,22 +59,22 @@ int	ft_putnbr(int nb)
 	return (ft_putnbr_base(nb, "0123456789", 0));
 }
 
-int	ft_putnbr_base(size_t nb, char *base, int basamak1)
+int	ft_putnbr_base(size_t nb, char *base, int digit1)
 {
 	size_t		uzb;
-	static int	basamak;
+	static int	digit;
 
-	basamak = basamak1;
+	digit = digit1;
 	uzb = ft_strlen(base);
 	if (nb < uzb)
 	{
 		write(1, &base[nb], 1);
-		basamak++;
+		digit++;
 	}
 	if (nb >= uzb)
 	{
-		ft_putnbr_base(nb / uzb, base, basamak);
-		ft_putnbr_base(nb % uzb, base, basamak);
+		ft_putnbr_base(nb / uzb, base, digit);
+		ft_putnbr_base(nb % uzb, base, digit);
 	}
-	return (basamak);
+	return (digit);
 }
